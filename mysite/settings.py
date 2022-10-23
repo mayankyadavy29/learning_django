@@ -25,8 +25,7 @@ IS_HEROKU = "DYNO" in os.environ
 SECRET_KEY = 'django-insecure-tl$(mt-!wd6m6n*l&rv+kz+owoo71u6-w#)%zd+(+$8e+$uwxu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if not IS_HEROKU:
-    DEBUG = True
+DEBUG = True
 
 if IS_HEROKU:
     ALLOWED_HOSTS = ["*"]
