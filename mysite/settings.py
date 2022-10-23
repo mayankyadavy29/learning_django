@@ -28,9 +28,6 @@ SECRET_KEY = 'django-insecure-tl$(mt-!wd6m6n*l&rv+kz+owoo71u6-w#)%zd+(+$8e+$uwxu
 DEBUG = True
 
 if IS_HEROKU:
-    DEBUG = False
-
-if IS_HEROKU:
     ALLOWED_HOSTS = ["*"]
 else:
     ALLOWED_HOSTS = []
