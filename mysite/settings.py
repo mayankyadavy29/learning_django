@@ -89,8 +89,8 @@ DATABASES = {
 
 MAX_CONN_AGE = 600
 
-if "DATABASE_URL" in os.environ:
-    DATABASES["default"] = dj_database_url.config(conn_max_age=MAX_CONN_AGE)
+
+DATABASES["default"] = dj_database_url.config(conn_max_age=MAX_CONN_AGE)
 
 
 # Password validation
