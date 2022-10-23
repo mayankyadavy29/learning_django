@@ -1,0 +1,6 @@
+{% extends 'myapp/base.html' %}
+{% block body %}
+    <h2>Are you sure you want to delete this book ?</h2>
+    <a class="btn btn-secondary" href="{% url 'myapp:detail' book_id %}">Cancel</a>
+    <a class="btn btn-danger" href="{% url 'myapp:cnfrm_delete' book_id %}">Delete</a>
+{% endblock %}
